@@ -14,6 +14,9 @@
 		08BADD732A0AF06500598491 /* VIBES_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD722A0AF06500598491 /* VIBES_1_0Tests.swift */; };
 		08BADD7D2A0AF06500598491 /* VIBES_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD7C2A0AF06500598491 /* VIBES_1_0UITests.swift */; };
 		08BADD7F2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD7E2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift */; };
+		08BADD8C2A0AF39100598491 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD8B2A0AF39100598491 /* SplashScreen.swift */; };
+		08BADD8D2A0AF39100598491 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD8B2A0AF39100598491 /* SplashScreen.swift */; };
+		08BADD8E2A0AF39100598491 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD8B2A0AF39100598491 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		08BADD782A0AF06500598491 /* VIBES 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIBES 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BADD7C2A0AF06500598491 /* VIBES_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBES_1_0UITests.swift; sourceTree = "<group>"; };
 		08BADD7E2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBES_1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08BADD8B2A0AF39100598491 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
 				08BADD632A0AF05E00598491 /* ContentView.swift */,
+				08BADD8B2A0AF39100598491 /* SplashScreen.swift */,
 				08BADD652A0AF06400598491 /* Assets.xcassets */,
 				08BADD672A0AF06400598491 /* Preview Content */,
 			);
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BADD8C2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				08BADD642A0AF05E00598491 /* ContentView.swift in Sources */,
 				08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */,
 			);
@@ -266,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BADD8D2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				08BADD732A0AF06500598491 /* VIBES_1_0Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BADD8E2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				08BADD7D2A0AF06500598491 /* VIBES_1_0UITests.swift in Sources */,
 				08BADD7F2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift in Sources */,
 			);
