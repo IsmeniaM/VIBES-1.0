@@ -12,15 +12,15 @@ struct ContentView: View {
     var body: some View {
         
         TabView(selection: $tabSelection) {
-            Text("Home")
+            Home()
                 .tag(1)
-            Text("Search")
+            Search()
                 .tag(2)
-            Text("Favorites")
+            Favorites()
                 .tag(3)
-            Text("Profile")
+            Profile()
                 .tag(4)
-            Text("Settings")
+            Settings()
                 .tag(5)
         }
         .overlay(alignment: .bottom) {

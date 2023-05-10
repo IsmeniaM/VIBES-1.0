@@ -52,7 +52,7 @@ struct CostumTabView: View {
                                     .offset(y:3)
                             }
                         }
-                        .foregroundColor(index + 1 == tabSelection ? .yellow : .gray)
+                        .foregroundColor(index + 1 == tabSelection ? .yellow : .black)
                     }
                 }
             }
