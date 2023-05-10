@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
-				08BADD632A0AF05E00598491 /* ContentView.swift */,
+				08BADD8F2A0AF75400598491 /* Views */,
 				08BADD8B2A0AF39100598491 /* SplashScreen.swift */,
 				08BADD652A0AF06400598491 /* Assets.xcassets */,
 				08BADD672A0AF06400598491 /* Preview Content */,
@@ -130,6 +130,14 @@
 				08BADD7E2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift */,
 			);
 			path = "VIBES 1.0UITests";
+			sourceTree = "<group>";
+		};
+		08BADD8F2A0AF75400598491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08BADD632A0AF05E00598491 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
