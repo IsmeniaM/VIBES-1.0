@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tabSelection = 1
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-        Text("dev")
-            .padding()
+        
+        TabView(selection: $tabSelection) {
+            Text("Home")
+                .tag(1)
+            Text("Search")
+                .tag(2)
+            Text("Favorites")
+                .tag(3)
+            Text("Profile")
+                .tag(4)
+            Text("Settings")
+                .tag(5)
+        }
+        .overlay(alignment: .bottom) {
+            CostumTabView(tabSelection: $tabSelection)
+        }
     }
 }
 

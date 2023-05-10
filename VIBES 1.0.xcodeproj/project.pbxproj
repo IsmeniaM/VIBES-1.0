@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087A4AF92A0BC681001272A3 /* CostumTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4AF82A0BC681001272A3 /* CostumTabView.swift */; };
 		08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */; };
 		08BADD642A0AF05E00598491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD632A0AF05E00598491 /* ContentView.swift */; };
 		08BADD662A0AF06400598491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BADD652A0AF06400598491 /* Assets.xcassets */; };
@@ -15,8 +16,6 @@
 		08BADD7D2A0AF06500598491 /* VIBES_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD7C2A0AF06500598491 /* VIBES_1_0UITests.swift */; };
 		08BADD7F2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD7E2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift */; };
 		08BADD8C2A0AF39100598491 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD8B2A0AF39100598491 /* SplashScreen.swift */; };
-		08BADD8D2A0AF39100598491 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD8B2A0AF39100598491 /* SplashScreen.swift */; };
-		08BADD8E2A0AF39100598491 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD8B2A0AF39100598491 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087A4AF82A0BC681001272A3 /* CostumTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTabView.swift; sourceTree = "<group>"; };
 		08BADD5E2A0AF05E00598491 /* VIBES 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIBES 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBES_1_0App.swift; sourceTree = "<group>"; };
 		08BADD632A0AF05E00598491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087A4AF62A0BC0DA001272A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				087A4AF82A0BC681001272A3 /* CostumTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		087A4AF72A0BC0E5001272A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		08BADD552A0AF05E00598491 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +113,11 @@
 		08BADD602A0AF05E00598491 /* VIBES 1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
 				08BADD632A0AF05E00598491 /* ContentView.swift */,
+				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
 				08BADD8B2A0AF39100598491 /* SplashScreen.swift */,
+				087A4AF72A0BC0E5001272A3 /* Model */,
+				087A4AF62A0BC0DA001272A3 /* Views */,
 				08BADD652A0AF06400598491 /* Assets.xcassets */,
 				08BADD672A0AF06400598491 /* Preview Content */,
 			);
@@ -203,11 +220,9 @@
 					};
 					08BADD6D2A0AF06500598491 = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 08BADD5D2A0AF05E00598491;
 					};
 					08BADD772A0AF06500598491 = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 08BADD5D2A0AF05E00598491;
 					};
 				};
 			};
@@ -265,6 +280,7 @@
 				08BADD8C2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				08BADD642A0AF05E00598491 /* ContentView.swift in Sources */,
 				08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */,
+				087A4AF92A0BC681001272A3 /* CostumTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BADD8D2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				08BADD732A0AF06500598491 /* VIBES_1_0Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BADD8E2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				08BADD7D2A0AF06500598491 /* VIBES_1_0UITests.swift in Sources */,
 				08BADD7F2A0AF06500598491 /* VIBES_1_0UITestsLaunchTests.swift in Sources */,
 			);
@@ -479,7 +493,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -495,7 +508,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIBES 1.0.app/VIBES 1.0";
 			};
 			name = Debug;
 		};
@@ -503,7 +515,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -519,7 +530,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIBES 1.0.app/VIBES 1.0";
 			};
 			name = Release;
 		};
@@ -538,10 +548,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Menia.VIBES-1-0UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "VIBES 1.0";
 			};
 			name = Debug;
 		};
@@ -560,10 +570,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Menia.VIBES-1-0UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "VIBES 1.0";
 			};
 			name = Release;
 		};
