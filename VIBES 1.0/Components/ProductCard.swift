@@ -14,7 +14,8 @@ struct ProductCard: View {
     
     
     var body: some View {
-        
+            NavigationLink(destination: ProductDetailView(product: product)) {
+                
         ZStack(alignment: .topTrailing) {
           ZStack (alignment: .bottom) {
             
@@ -51,9 +52,11 @@ struct ProductCard: View {
                     .background(.yellow)
                     .cornerRadius(50)
                     .padding()
+               }
             }
         }
     }
+}
 
 
 struct ProductCard_Previews: PreviewProvider {
@@ -62,4 +65,3 @@ struct ProductCard_Previews: PreviewProvider {
             .environmentObject(CartManager())
     }
   }
-}

@@ -19,6 +19,8 @@
 		087A4B052A0BCE42001272A3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B042A0BCE42001272A3 /* Settings.swift */; };
 		087A4B082A0BD512001272A3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B072A0BD512001272A3 /* Product.swift */; };
 		087A4B0B2A0BD7C2001272A3 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B0A2A0BD7C2001272A3 /* ProductCard.swift */; };
+		087DD1B32A0D73C200A49C6A /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087DD1B22A0D73C200A49C6A /* ProductListView.swift */; };
+		087DD1B52A0D741D00A49C6A /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087DD1B42A0D741D00A49C6A /* ProductDetailView.swift */; };
 		08A17DD82A0D2BC7007201F0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A17DD72A0D2BC7007201F0 /* SearchBar.swift */; };
 		08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */; };
 		08BADD642A0AF05E00598491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD632A0AF05E00598491 /* ContentView.swift */; };
@@ -60,6 +62,8 @@
 		087A4B042A0BCE42001272A3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		087A4B072A0BD512001272A3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		087A4B0A2A0BD7C2001272A3 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		087DD1B22A0D73C200A49C6A /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		087DD1B42A0D741D00A49C6A /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		08A17DD72A0D2BC7007201F0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		08BADD5E2A0AF05E00598491 /* VIBES 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIBES 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBES_1_0App.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			children = (
 				080F08522A0C155A00EA18DE /* CartView.swift */,
 				087A4AF82A0BC681001272A3 /* CostumTabView.swift */,
+				087DD1B42A0D741D00A49C6A /* ProductDetailView.swift */,
+				087DD1B22A0D73C200A49C6A /* ProductListView.swift */,
 				087A4AFB2A0BCD60001272A3 /* TabView */,
 			);
 			path = Views;
@@ -170,16 +176,16 @@
 		08BADD602A0AF05E00598491 /* VIBES 1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				08A17DD62A0D2B90007201F0 /* ViewModel */,
 				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
 				08BADD8B2A0AF39100598491 /* SplashScreen.swift */,
 				08BADD632A0AF05E00598491 /* ContentView.swift */,
+				08A17DD62A0D2B90007201F0 /* ViewModel */,
 				087A4B092A0BD745001272A3 /* Components */,
 				087A4B062A0BD4F3001272A3 /* Models */,
 				087A4AF62A0BC0DA001272A3 /* Views */,
 				08BADD652A0AF06400598491 /* Assets.xcassets */,
-				08BADD672A0AF06400598491 /* Preview Content */,
 				080F08542A0C16E100EA18DE /* CartManager.swift */,
+				08BADD672A0AF06400598491 /* Preview Content */,
 			);
 			path = "VIBES 1.0";
 			sourceTree = "<group>";
@@ -351,8 +357,10 @@
 				080F08552A0C16E100EA18DE /* CartManager.swift in Sources */,
 				087A4B082A0BD512001272A3 /* Product.swift in Sources */,
 				08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */,
+				087DD1B32A0D73C200A49C6A /* ProductListView.swift in Sources */,
 				087A4AF92A0BC681001272A3 /* CostumTabView.swift in Sources */,
 				087A4B0B2A0BD7C2001272A3 /* ProductCard.swift in Sources */,
+				087DD1B52A0D741D00A49C6A /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
