@@ -28,6 +28,23 @@ struct ProductRow: View {
             
             Spacer()
             
+            Button(action: {
+                cartManager.incrementQuantity(for: product)
+            }) {
+                Image(systemName: "plus.circle")
+                    .foregroundColor(.green)
+            }
+            
+            Text("\(cartManager.getQuantity(for: product))")
+                .padding(.horizontal, 5)
+            
+            Button(action: {
+                cartManager.decrementQuantity(for: product)
+            }) {
+                Image(systemName: "minus.circle")
+                    .foregroundColor(.red)
+            }
+            
             Image(systemName: "trash")
                 .foregroundColor(.red)
                 .onTapGesture {

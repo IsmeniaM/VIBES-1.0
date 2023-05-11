@@ -19,6 +19,7 @@
 		087A4B052A0BCE42001272A3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B042A0BCE42001272A3 /* Settings.swift */; };
 		087A4B082A0BD512001272A3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B072A0BD512001272A3 /* Product.swift */; };
 		087A4B0B2A0BD7C2001272A3 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B0A2A0BD7C2001272A3 /* ProductCard.swift */; };
+		08A17DD82A0D2BC7007201F0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A17DD72A0D2BC7007201F0 /* SearchBar.swift */; };
 		08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */; };
 		08BADD642A0AF05E00598491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD632A0AF05E00598491 /* ContentView.swift */; };
 		08BADD662A0AF06400598491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BADD652A0AF06400598491 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		087A4B042A0BCE42001272A3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		087A4B072A0BD512001272A3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		087A4B0A2A0BD7C2001272A3 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		08A17DD72A0D2BC7007201F0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		08BADD5E2A0AF05E00598491 /* VIBES 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIBES 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBES_1_0App.swift; sourceTree = "<group>"; };
 		08BADD632A0AF05E00598491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,9 +102,9 @@
 		087A4AF62A0BC0DA001272A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				087A4AFB2A0BCD60001272A3 /* TabView */,
-				087A4AF82A0BC681001272A3 /* CostumTabView.swift */,
 				080F08522A0C155A00EA18DE /* CartView.swift */,
+				087A4AF82A0BC681001272A3 /* CostumTabView.swift */,
+				087A4AFB2A0BCD60001272A3 /* TabView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +139,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		08A17DD62A0D2B90007201F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08A17DD72A0D2BC7007201F0 /* SearchBar.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		08BADD552A0AF05E00598491 = {
 			isa = PBXGroup;
 			children = (
@@ -160,10 +170,11 @@
 		08BADD602A0AF05E00598491 /* VIBES 1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				087A4B092A0BD745001272A3 /* Components */,
+				08A17DD62A0D2B90007201F0 /* ViewModel */,
 				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
 				08BADD8B2A0AF39100598491 /* SplashScreen.swift */,
 				08BADD632A0AF05E00598491 /* ContentView.swift */,
+				087A4B092A0BD745001272A3 /* Components */,
 				087A4B062A0BD4F3001272A3 /* Models */,
 				087A4AF62A0BC0DA001272A3 /* Views */,
 				08BADD652A0AF06400598491 /* Assets.xcassets */,
@@ -328,6 +339,7 @@
 			files = (
 				08BADD8C2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				087A4B032A0BCE32001272A3 /* Profile.swift in Sources */,
+				08A17DD82A0D2BC7007201F0 /* SearchBar.swift in Sources */,
 				080F08572A0C1AC600EA18DE /* ProductRow.swift in Sources */,
 				080F08532A0C155A00EA18DE /* CartView.swift in Sources */,
 				08BADD642A0AF05E00598491 /* ContentView.swift in Sources */,

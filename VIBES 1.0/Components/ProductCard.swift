@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ProductCard: View {
     @EnvironmentObject var cartManager : CartManager
-    var product: Product
+    @State var isFavorited: Bool = false
+    @State var product: Product
+    
     
     var body: some View {
         
@@ -22,21 +24,22 @@ struct ProductCard: View {
                 .frame(width: 180)
                 .scaledToFit()
             
-            VStack(alignment: .leading) {
-                Text(product.name)
-                    .bold()
-                
-                Text("\(product.price)KR")
-                    .font(.caption)
-                
-            }
-            .padding()
-            .frame(width: 180, alignment: .leading)
-            .background(.ultraThinMaterial)
-            .cornerRadius(20)
-        }
-        .frame(width: 180, height: 250)
-        .shadow(radius: 3)
+              HStack {
+                      VStack(alignment: .leading) {
+                          Text(product.name)
+                              .bold()
+                          
+                          Text("\(product.price)KR")
+                              .font(.caption)
+                      }
+                      .padding()
+                      .frame(width: 180, alignment: .leading)
+                      .background(.ultraThinMaterial)
+                      .cornerRadius(20)
+                  }
+                }
+                .frame(width: 180, height: 250)
+                .shadow(radius: 3)
             
             Button {
                 cartManager.addToCart(product: product)
@@ -44,18 +47,19 @@ struct ProductCard: View {
             } label: {
                 Image(systemName: "plus")
                     .padding(10)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .background(.yellow)
                     .cornerRadius(50)
                     .padding()
             }
         }
     }
-}
+
 
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
         ProductCard(product: productList[0])
             .environmentObject(CartManager())
     }
+  }
 }

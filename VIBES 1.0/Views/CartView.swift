@@ -24,9 +24,19 @@ struct CartView: View {
                     Text("\(cartManager.total) KR")
                         .bold()
                 }
-                .padding() 
+                .padding()
             } else {
-                Text("Your cart is empety")
+                
+                Image("empty")
+                    .resizable()
+                    .cornerRadius(20)
+                    .frame(width: 180, height: 180)
+                    .scaledToFit()
+                    .padding(.top, 160)
+                    
+                Text("Your cart is empty ...")
+                    .bold()
+                    
             }
         }
         .navigationTitle(Text("My cart"))
