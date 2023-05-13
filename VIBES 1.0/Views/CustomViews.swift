@@ -39,7 +39,7 @@ struct CustomTextField: View {
             
             if placeHolder == "Password" || placeHolder == "Confirm Password" {
                 
-                ZStack {
+                ZStack (alignment: .leading) {
                 if value.isEmpty {
                     Text(placeHolder)
                         .foregroundColor(.gray)
@@ -97,3 +97,13 @@ struct CustomButtonLogIn: View {
         
     }
 }
+
+//struct TopBarView: View {
+//    var body : some View {
+//        Button(action: {}, label: {
+//            Image(systemName: "chevron.backward")
+//                .ignoresSafeArea()
+//                .padding(.horizontal, 20)
+//        })
+//    }
+//}

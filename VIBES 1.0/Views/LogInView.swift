@@ -11,6 +11,8 @@ struct LogInView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var isLinkActive: Bool = false
+    
     var body: some View {
         NavigationView {
             ZStack(alignment: .topLeading){
@@ -50,6 +52,7 @@ struct LogInView: View {
                             VStack {
                                 Text("Forgot Password")
                                     .fontWeight(.medium)
+                                    
                                 
                                 Button (action: {}, label: {
                                     CustomButtonLogIn(title: "SIGN IN", bgColor: "bColor")
@@ -57,10 +60,34 @@ struct LogInView: View {
                                     .padding(.horizontal, 20)
                             }
                         }
+                        
+                        Spacer()
+                        
+                        HStack {
+                            Text("Don't have an account?")
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                                .font(.system(size: 18))
+                            
+                            NavigationLink(destination: SignUpView(), isActive: $isLinkActive) { // Add the NavigationLink
+                                                    Text("Sign Up")
+                                                        .font(.system(size: 18))
+                                                        .foregroundColor(Color("brown"))
+                                                        .fontWeight(.bold)
+                                                }
+                                                .isDetailLink(false) // Disable the default behavior of NavigationLink
+                            
+                        }
+                        .frame(height: 63)
+                        .frame(minWidth: 0, maxHeight: .infinity)
+//                        .background(Color("yellow"))
+                        .ignoresSafeArea()
                     }
                 }
             }
+            .edgesIgnoringSafeArea(.bottom)
         }
+        .navigationBarHidden(true)
     }
 }
 
