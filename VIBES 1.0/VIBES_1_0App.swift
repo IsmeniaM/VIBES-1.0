@@ -11,7 +11,7 @@ import SwiftUI
 struct VIBES_1_0App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }
