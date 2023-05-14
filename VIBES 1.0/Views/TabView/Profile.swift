@@ -11,7 +11,7 @@ struct Profile: View {
     
     var body: some View {
         
-        VStack {
+        ScrollView {
             VStack{
                 Image ("singer2")
                     .resizable()
