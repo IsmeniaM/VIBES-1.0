@@ -19,8 +19,8 @@ struct SplashScreen: View {
                 VStack {
                     VStack {
                         Image("sthlm")
-                            .font(.system(size: 80))
-                            .foregroundColor(.red)
+//                            .font(.system(size: 80))
+//                            .foregroundColor(.red)
                     }
                     .scaleEffect(size)
                     .opacity(opacity)
