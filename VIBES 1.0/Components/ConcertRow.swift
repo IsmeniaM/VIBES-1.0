@@ -59,7 +59,7 @@ struct ConcertRow: View {
 
 struct ConcertRow_Previews: PreviewProvider {
     static var previews: some View {
-        ConcertRow(concert: concerts[3])
+        ConcertRow(concert: concertsList[3])
             .environmentObject(CartManager())
     }
 }

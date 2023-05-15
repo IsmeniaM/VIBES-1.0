@@ -20,7 +20,7 @@ struct Concert: Identifiable, Equatable {
     
 }
 
-let concerts = [
+let concertsList = [
     Concert(name: "Scenkursföreställning", date: "20/05/2023", image: "event1", time: "19:00", address: "Birger Jarlsgatan 70", price: 350),
     
     Concert(name: "Svartklubben - Mat & Musik i Mörker", date: "16/05/2023", image: "event2", time: "19:00", address: "Birger Jarlsgatan 70", price: 350),
