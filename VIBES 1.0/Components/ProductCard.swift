@@ -14,7 +14,7 @@ struct ProductCard: View {
     
     
     var body: some View {
-            NavigationLink(destination: ProductDetailView(product: product)) {
+    NavigationLink(destination: ProductDetailView(product: product)) {
                 
         ZStack(alignment: .topTrailing) {
           ZStack (alignment: .bottom) {

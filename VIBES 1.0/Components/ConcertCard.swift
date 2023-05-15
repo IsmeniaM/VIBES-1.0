@@ -12,27 +12,29 @@ struct ConcertCard: View {
     @EnvironmentObject var cartManager : CartManager
     
     var body: some View {
-        ZStack(alignment: .topTrailing) {
-          ZStack (alignment: .bottom) {
-            
-            Image(concert.image)
-                .resizable()
-                .cornerRadius(20)
-                .frame(width: 380, height: 200)
-                .scaledToFit()
-            
-              HStack {
-                      VStack(alignment: .leading) {
-                         
-                         Text(concert.name)
-                                  .font(.title3)
-                                  .bold()
-                      
-                      .padding()
-                      .frame(width: 380, height: 50)
-                      .background(.ultraThinMaterial)
-                      .cornerRadius(20)
-                  }
+        NavigationLink (destination: ConcertDetailView(concert: concert)) {
+            ZStack(alignment: .topTrailing) {
+              ZStack (alignment: .bottom) {
+                
+                Image(concert.image)
+                    .resizable()
+                    .cornerRadius(20)
+                    .frame(width: 380, height: 200)
+                    .scaledToFit()
+                
+                  HStack {
+                          VStack(alignment: .leading) {
+                             
+                             Text(concert.name)
+                                      .font(.title3)
+                                      .bold()
+                          
+                          .padding()
+                          .frame(width: 380, height: 50)
+                          .background(.ultraThinMaterial)
+                          .cornerRadius(20)
+                      }
+                    }
                 }
             }
         }
