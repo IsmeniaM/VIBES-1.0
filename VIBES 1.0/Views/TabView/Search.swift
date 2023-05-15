@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct Search: View {
+    @StateObject var cartManager = CartManager()
+    var columns = [GridItem(.adaptive(minimum: 260), spacing: 20)]
     var body: some View {
-        Text("HERE BBY ? SEARCH")
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(concerts, id: \.id) { concert in
+                        ConcertCard(concert: concert)
+                        
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle(Text("All Events This Month"))
+            .toolbar {
+                NavigationLink {
+                    CartConcertView()
+                        .environmentObject(cartManager)
+                } label: {
+                    CartConcertButton(numberOfProducts: cartManager.concerts.count)
+                }
+            }
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

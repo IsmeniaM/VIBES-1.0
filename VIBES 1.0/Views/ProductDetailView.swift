@@ -32,6 +32,7 @@ struct ProductDetailView: View {
                                     Image(systemName: isFavorited ? "heart.fill" : "heart")
                                         .foregroundColor(.red)
                                         .font(.largeTitle)
+                                    
                                 })
                                 .padding(.bottom)
             }
