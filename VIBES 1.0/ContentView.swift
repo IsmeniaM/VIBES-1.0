@@ -9,12 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var tabSelection = 1
+    @StateObject var cartManager = CartManager()
+    
     var body: some View {
         
         TabView(selection: $tabSelection) {
             Home()
+                .environmentObject(cartManager)
                 .tag(1)
             Search()
+                .environmentObject(cartManager)
                 .tag(2)
             Favorites()
                 .tag(3)

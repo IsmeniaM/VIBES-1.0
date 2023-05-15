@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct Search: View {
-    @StateObject var cartManager = CartManager()
+    @EnvironmentObject var cartManager: CartManager
+    
     var columns = [GridItem(.adaptive(minimum: 260), spacing: 20)]
     var body: some View {
         NavigationView{
             ScrollView{
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(concerts, id: \.id) { concert in
+                    ForEach(concertsList, id: \.id) { concert in
                         ConcertCard(concert: concert)
                         
                     }
@@ -32,6 +33,7 @@ struct Search: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .environmentObject(cartManager)
     }
 }
 

@@ -21,7 +21,7 @@ struct ConcertCard: View {
                     .cornerRadius(20)
                     .frame(width: 380, height: 200)
                     .scaledToFit()
-                
+                 
                   HStack {
                           VStack(alignment: .leading) {
                              
@@ -35,6 +35,20 @@ struct ConcertCard: View {
                           .cornerRadius(20)
                       }
                     }
+                 
+                  Button {
+                      cartManager.addToCart(concert: concert)
+                      print("Add to cart")
+                  } label : {
+                     
+                      Image(systemName: "plus")
+                          .padding()
+                          .foregroundColor(.white)
+                          .background(.black)
+                          .cornerRadius(50)
+                          .padding(.bottom, 140 )
+                          
+                  }
                 }
             }
         }
@@ -43,6 +57,6 @@ struct ConcertCard: View {
 
 struct ConcertCard_Previews: PreviewProvider {
     static var previews: some View {
-        ConcertCard(concert: concerts[0])
+        ConcertCard(concert: concertsList[0])
     }
 }
