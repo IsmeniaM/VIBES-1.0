@@ -23,6 +23,7 @@
 		086E80002A11BA9A00ADE35D /* CartConcertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7FFF2A11BA9A00ADE35D /* CartConcertButton.swift */; };
 		086F89AE2A12570F0083C5E1 /* ConcertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89AD2A12570F0083C5E1 /* ConcertDetailView.swift */; };
 		086F89B02A127AAD0083C5E1 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89AF2A127AAD0083C5E1 /* NewsCard.swift */; };
+		086F89B22A12E4860083C5E1 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89B12A12E4860083C5E1 /* News.swift */; };
 		086F89B42A1373650083C5E1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89B32A1373650083C5E1 /* SearchBar.swift */; };
 		086F89B62A13C91B0083C5E1 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89B52A13C91B0083C5E1 /* PaymentButton.swift */; };
 		087A4AF92A0BC681001272A3 /* CostumTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4AF82A0BC681001272A3 /* CostumTabView.swift */; };
@@ -73,6 +74,7 @@
 		086E7FFF2A11BA9A00ADE35D /* CartConcertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartConcertButton.swift; sourceTree = "<group>"; };
 		086F89AD2A12570F0083C5E1 /* ConcertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertDetailView.swift; sourceTree = "<group>"; };
 		086F89AF2A127AAD0083C5E1 /* NewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
+		086F89B12A12E4860083C5E1 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		086F89B32A1373650083C5E1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		086F89B52A13C91B0083C5E1 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		087A4AF82A0BC681001272A3 /* CostumTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTabView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				086E7FF72A117CDF00ADE35D /* Concert.swift */,
+				086F89B12A12E4860083C5E1 /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				08BADD642A0AF05E00598491 /* ContentView.swift in Sources */,
 				087A4AFD2A0BCD7C001272A3 /* Home.swift in Sources */,
 				087A4AFF2A0BCE0B001272A3 /* Search.swift in Sources */,
+				086F89B22A12E4860083C5E1 /* News.swift in Sources */,
 				080F08512A0C124C00EA18DE /* CartButton.swift in Sources */,
 				087A4B012A0BCE23001272A3 /* Favorites.swift in Sources */,
 				086E7FF82A117CDF00ADE35D /* Concert.swift in Sources */,
