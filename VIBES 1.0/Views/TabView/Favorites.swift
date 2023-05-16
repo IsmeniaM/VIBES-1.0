@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct Favorites: View {
+    
+    var columns = [GridItem(.adaptive(minimum: 260), spacing: 20)]
+    
     var body: some View {
-        Text("FAVS GIRL!")
+        NavigationView {
+            VStack {
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(concertsList, id: \.id) { concert in
+                            ConcertCard(concert: concert)
+                        }
+                    }
+                    .padding()
+                }
+            }
+        }
+        
     }
 }
 
