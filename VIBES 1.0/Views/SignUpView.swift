@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignUpView: View {
     
@@ -14,6 +15,54 @@ struct SignUpView: View {
     @State private var email: String = ""
     @State private var cpassword: String = ""
     @State var isLinkActive = false
+    @State private var showAlert = false
+    @State private var alertMessage = ""
+    @Environment(\.presentationMode) var presentationMode
+    
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if  error != nil {
+                // Handle sign-in error
+                print("Sign-in error: \(error!.localizedDescription)")
+            } else {
+                // Sign-in successful
+                print("Sign-in successful")
+                // Perform any necessary actions after successful sign-in
+            }
+        }
+    
+    if !email.isValidEmail() {
+                alertMessage = "Invalid email format."
+                showAlert = true
+                return
+            }
+            
+            if password.count < 6 {
+                alertMessage = "Password should be at least 6 characters long."
+                showAlert = true
+                return
+            }
+            
+            if password != cpassword {
+                alertMessage = "Passwords do not match."
+                showAlert = true
+                return
+            }
+    
+    
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                    if let error = error {
+                        // Handle sign-in error
+                        alertMessage = error.localizedDescription
+                        showAlert = true
+                    } else {
+                        // Sign-in successful
+                        alertMessage = "Account created successfully."
+                        showAlert = true
+                        presentationMode.wrappedValue.dismiss()
+                }
+            }
+        }
     
     var body: some View {
                 NavigationView {
@@ -56,10 +105,19 @@ struct SignUpView: View {
                                         
                                         CustomTextField(placeHolder: "Confirm Password", imageName: "lock", bColor: "textColor2", tOpacity: 1.0, value: $cpassword)
                                     }
+                                    .alert(isPresented: $showAlert) {
+                                        Alert(
+                                            title: Text("Attention!"),
+                                            message: Text(alertMessage),
+                                            dismissButton: .default(Text("OK"))
+                                        )
+                                    }
                                     
                                     VStack  {
                                         
-                                        Button (action: {}, label: {
+                                        Button (action: {
+                                            register()
+                                        }, label: {
                                             CustomButtonLogIn(title: "SIGN UP", bgColor: "bColor")
                                     })
                                             .padding(.horizontal, 20)
@@ -98,7 +156,7 @@ struct SignUpView: View {
                 }
                 .navigationBarHidden(true)
             }
-        }
+}
 
 
 
