@@ -12,7 +12,7 @@ class CartManager: ObservableObject {
     @Published private(set) var concerts: [Concert] = []
     
     @Published private(set) var total: Int = 0
-    @Published private(set) var favorites: [Product] = []
+    @Published private(set) var favorites: [Concert] = []
 
     
     
@@ -56,18 +56,22 @@ class CartManager: ObservableObject {
             }
       }
     
-//    func addFavorites(product: Product) {
-//        if !favorites.contains(product) {
-//            favorites.append(product)
-//        }
-//    }
-//    
-//    func removeFromFavorites(product: Product) {
-//        if let index = favorites.firstIndex(of: product) {
-//            favorites.remove(at: index)
-//            print("removed from the fav")
-//        }
-//    }
+    
+    func addToFavorites(concert: Concert) {
+        favorites.append(concert)
+    }
+    
+    func removeFromFavorites(concert: Concert) {
+            if let index = favorites.firstIndex(of: concert) {
+                favorites.remove(at: index)
+            }
+        }
+    
+    func isFavorite(concert: Concert) -> Bool {
+            return favorites.contains(concert)
+        }
+    
+    
     
     
     func getQuantity(for concert: Concert) -> Int {
