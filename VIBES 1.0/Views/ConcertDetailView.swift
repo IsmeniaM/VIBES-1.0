@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ConcertDetailView: View {
     @State var concert: Concert
-    @StateObject var cartManager = CartManager()
-  //  @EnvironmentObject var cartManager: CartManager
+    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         ScrollView {
@@ -21,7 +20,7 @@ struct ConcertDetailView: View {
                     .aspectRatio(contentMode: .fit)
             }
             
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text("Join us for an unforgettable concert experience!")
                     .font(.title)
                     .fontWeight(.bold)
@@ -49,16 +48,49 @@ struct ConcertDetailView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.yellow)
                 
+                
+                VStack(spacing: 10) {
+                    Button(action: {
+                        cartManager.addToCart(concert: concert)
+                        print("added to cart")
+                    }) {
+                        Text("ADD TO CART")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.vertical)
+                            .frame(width: UIScreen.main.bounds.width, height: 60)
+                            .background(Color.black)
+                            .cornerRadius(15)
+                    }
+                    .padding(.vertical)
+                    
+
+                    Button(action: {
+                        cartManager.addToFavorites(concert: concert)
+                        print("added to favorites")
+                    }) {
+                        Text("ADD TO FAVORITES")
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                            .padding(.vertical)
+                            .frame(width: UIScreen.main.bounds.width, height: 60)
+                            .background(Color.yellow)
+                            .cornerRadius(15)
+                    }
+                    
+                }
+                
             }
             .padding()
             .environmentObject(cartManager)
+            
         }
     }
 }
 
 struct ConcertDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let concert = Concert(name: "concert-name", date: "10-11-2023", image: "concert-image", time: "10.00", address: "Street Love", price: 350)
+        let concert = Concert(name: "concert-name", date: "10-11-2023", image: "concert-image", time: "10.00", address: "Street Love", price: 350, isFavorite: false)
         
         //ConcertCard(concert: concerts[0])
         return ConcertDetailView(concert: concert)

@@ -9,18 +9,34 @@ import SwiftUI
 
 struct Search: View {
     @EnvironmentObject var cartManager: CartManager
+    @State private var searchText = ""
     
+    var filteredConcerts: [Concert] {
+        if searchText.isEmpty {
+            return concertsList
+        } else {
+            return concertsList.filter { concert in
+                concert.name.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
+   
     var columns = [GridItem(.adaptive(minimum: 260), spacing: 20)]
+    
     var body: some View {
-        NavigationView{
-            ScrollView{
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(concertsList, id: \.id) { concert in
-                        ConcertCard(concert: concert)
-                        
+        NavigationView {
+            VStack {
+                SearchBar(text: $searchText)
+                    .padding()
+                
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(filteredConcerts, id: \.id) { concert in
+                            ConcertCard(concert: concert)
+                        }
                     }
+                    .padding()
                 }
-                .padding()
             }
             .navigationTitle(Text("All Events This Month"))
             .toolbar {

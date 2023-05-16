@@ -58,5 +58,6 @@ struct ConcertCard: View {
 struct ConcertCard_Previews: PreviewProvider {
     static var previews: some View {
         ConcertCard(concert: concertsList[0])
+            .environmentObject(CartManager())
     }
 }
