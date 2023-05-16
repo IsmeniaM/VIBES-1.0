@@ -161,13 +161,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		08A17DD62A0D2B90007201F0 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		08BADD552A0AF05E00598491 = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +188,6 @@
 				08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */,
 				08BADD8B2A0AF39100598491 /* SplashScreen.swift */,
 				08BADD632A0AF05E00598491 /* ContentView.swift */,
-				08A17DD62A0D2B90007201F0 /* ViewModel */,
 				087A4B092A0BD745001272A3 /* Components */,
 				087A4B062A0BD4F3001272A3 /* Models */,
 				087A4AF62A0BC0DA001272A3 /* Views */,
