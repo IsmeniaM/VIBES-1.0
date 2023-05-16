@@ -25,6 +25,9 @@ struct CartConcertView: View {
                             .bold()
                     }
                     .padding()
+                    
+                    PaymentButton(action: {})
+                        .padding()
                 } else {
                     
                     Image("empty")
