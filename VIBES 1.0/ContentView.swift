@@ -21,6 +21,7 @@ struct ContentView: View {
                 .environmentObject(cartManager)
                 .tag(2)
             Favorites()
+                .environmentObject(cartManager)
                 .tag(3)
             Profile()
                 .tag(4)

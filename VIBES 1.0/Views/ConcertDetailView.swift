@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ConcertDetailView: View {
     @State var concert: Concert
-    @StateObject var cartManager = CartManager()
-  //  @EnvironmentObject var cartManager: CartManager
+//    @StateObject var cartManager = CartManager()
+    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         ScrollView {
@@ -48,6 +48,20 @@ struct ConcertDetailView: View {
                 Text("Don't miss out on this opportunity to witness \(concert.name)'s unparalleled talent and enjoy an evening filled with unforgettable music and memories. Grab your tickets now and get ready to be transported into a world of pure musical magic!")
                     .fontWeight(.bold)
                     .foregroundColor(.yellow)
+                
+                Button(action: {
+                    cartManager.addToCart(concert: concert)
+                    print("added to cart")
+                }) {
+                    Text("ADD TO CART")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width, height: 80)
+                        .background(Color.black)
+                        .cornerRadius(15)
+                }
+                .padding(.vertical)
                 
             }
             .padding()
