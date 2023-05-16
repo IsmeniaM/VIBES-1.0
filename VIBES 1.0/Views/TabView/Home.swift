@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     @EnvironmentObject var cartManager: CartManager
+   // @State var news: News
+    
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
@@ -46,6 +48,23 @@ struct Home: View {
                     }
                     
                     // Rest of your code goes here...
+                    
+                    VStack {
+                        Text("NEWS IN TOWN ")
+                            .foregroundColor(Color("yellow"))
+                            .font(.title)
+                            .fontWeight(.bold)
+                    }
+                    .padding()
+                    
+//                    ScrollView(.horizontal, showsIndicators: false) {
+//                        LazyHStack(spacing: 20) {
+//                            ForEach(newsList, id: \.id) { news in
+//                                NewsCard()
+//                            }
+//                        }
+//                        .padding(.horizontal)
+//                    }
                     
                 }
                 .padding(.vertical)
