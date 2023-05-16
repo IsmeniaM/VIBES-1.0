@@ -17,6 +17,7 @@
 		086E80002A11BA9A00ADE35D /* CartConcertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7FFF2A11BA9A00ADE35D /* CartConcertButton.swift */; };
 		086F89AE2A12570F0083C5E1 /* ConcertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89AD2A12570F0083C5E1 /* ConcertDetailView.swift */; };
 		086F89B02A127AAD0083C5E1 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89AF2A127AAD0083C5E1 /* NewsCard.swift */; };
+		086F89B42A1373650083C5E1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F89B32A1373650083C5E1 /* SearchBar.swift */; };
 		087A4AF92A0BC681001272A3 /* CostumTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4AF82A0BC681001272A3 /* CostumTabView.swift */; };
 		087A4AFD2A0BCD7C001272A3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4AFC2A0BCD7C001272A3 /* Home.swift */; };
 		087A4AFF2A0BCE0B001272A3 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4AFE2A0BCE0B001272A3 /* Search.swift */; };
@@ -24,7 +25,6 @@
 		087A4B032A0BCE32001272A3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B022A0BCE32001272A3 /* Profile.swift */; };
 		087A4B052A0BCE42001272A3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B042A0BCE42001272A3 /* Settings.swift */; };
 		087A4B082A0BD512001272A3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A4B072A0BD512001272A3 /* Product.swift */; };
-		08A17DD82A0D2BC7007201F0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A17DD72A0D2BC7007201F0 /* SearchBar.swift */; };
 		08BADD622A0AF05E00598491 /* VIBES_1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */; };
 		08BADD642A0AF05E00598491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BADD632A0AF05E00598491 /* ContentView.swift */; };
 		08BADD662A0AF06400598491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BADD652A0AF06400598491 /* Assets.xcassets */; };
@@ -63,6 +63,7 @@
 		086E7FFF2A11BA9A00ADE35D /* CartConcertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartConcertButton.swift; sourceTree = "<group>"; };
 		086F89AD2A12570F0083C5E1 /* ConcertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertDetailView.swift; sourceTree = "<group>"; };
 		086F89AF2A127AAD0083C5E1 /* NewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
+		086F89B32A1373650083C5E1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		087A4AF82A0BC681001272A3 /* CostumTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTabView.swift; sourceTree = "<group>"; };
 		087A4AFC2A0BCD7C001272A3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		087A4AFE2A0BCE0B001272A3 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		087A4B022A0BCE32001272A3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		087A4B042A0BCE42001272A3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		087A4B072A0BD512001272A3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		08A17DD72A0D2BC7007201F0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		08BADD5E2A0AF05E00598491 /* VIBES 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIBES 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BADD612A0AF05E00598491 /* VIBES_1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBES_1_0App.swift; sourceTree = "<group>"; };
 		08BADD632A0AF05E00598491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 				086E7FF92A118D6900ADE35D /* ConcertCard.swift */,
 				086E7FFD2A11B7C200ADE35D /* ConcertRow.swift */,
 				086F89AF2A127AAD0083C5E1 /* NewsCard.swift */,
+				086F89B32A1373650083C5E1 /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 		08A17DD62A0D2B90007201F0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				08A17DD72A0D2BC7007201F0 /* SearchBar.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -362,13 +362,13 @@
 			files = (
 				08BADD8C2A0AF39100598491 /* SplashScreen.swift in Sources */,
 				087A4B032A0BCE32001272A3 /* Profile.swift in Sources */,
-				08A17DD82A0D2BC7007201F0 /* SearchBar.swift in Sources */,
 				08BADD642A0AF05E00598491 /* ContentView.swift in Sources */,
 				087A4AFD2A0BCD7C001272A3 /* Home.swift in Sources */,
 				087A4AFF2A0BCE0B001272A3 /* Search.swift in Sources */,
 				080F08512A0C124C00EA18DE /* CartButton.swift in Sources */,
 				087A4B012A0BCE23001272A3 /* Favorites.swift in Sources */,
 				086E7FF82A117CDF00ADE35D /* Concert.swift in Sources */,
+				086F89B42A1373650083C5E1 /* SearchBar.swift in Sources */,
 				086E7FFE2A11B7C200ADE35D /* ConcertRow.swift in Sources */,
 				087A4B052A0BCE42001272A3 /* Settings.swift in Sources */,
 				080F08552A0C16E100EA18DE /* CartManager.swift in Sources */,
