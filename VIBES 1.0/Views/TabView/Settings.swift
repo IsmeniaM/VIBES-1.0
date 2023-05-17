@@ -55,6 +55,9 @@ struct Settings: View {
                 Section {
                     Button (action: logout) {
                             Text("Logout")
+                            .bold()
+                            .foregroundColor(.red)
+                        
                     }
                 }
 
