@@ -111,6 +111,7 @@ struct LogInView: View {
         return !email.isEmpty && !password.isEmpty
     }
     
+    
     func login() {
         if !email.isValidEmail() {
             alertMessage = "Invalid email format."

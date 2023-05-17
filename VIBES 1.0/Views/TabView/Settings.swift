@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct Settings: View {
+    
+    @State private var isLoggedOut = false
     var body: some View {
         
         NavigationView {
@@ -48,16 +51,36 @@ struct Settings: View {
                         SettingsCell(settingsTitle: "Report a bug", imgName: "exclamationmark.triangle", clr: .yellow)
                     }
                 }
+                
+                Section {
+                    Button (action: logout) {
+                            Text("Logout")
+                    }
+                }
 
             }
             .navigationBarTitle("Settings")
         }
+        .fullScreenCover(isPresented: $isLoggedOut) {
+            LogInView()
+        }
     }
     
+        
     func showFeatures() {
         print("Show user Features")
     }
-}
+    
+    func logout() {
+            do {
+                try Auth.auth().signOut()
+                isLoggedOut = true
+            } catch {
+                print("Logout error: \(error.localizedDescription)")
+            }
+        }
+    }
+
 
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {

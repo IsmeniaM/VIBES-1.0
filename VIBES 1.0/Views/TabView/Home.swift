@@ -13,6 +13,8 @@ struct Home: View {
     
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
+    var newsList = [NewsCard].self
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -57,14 +59,14 @@ struct Home: View {
                     }
                     .padding()
                     
-//                    ScrollView(.horizontal, showsIndicators: false) {
-//                        LazyHStack(spacing: 20) {
-//                            ForEach(newsList, id: \.id) { news in
-//                                NewsCard()
-//                            }
-//                        }
-//                        .padding(.horizontal)
-//                    }
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 20) {
+                            ForEach(0..<10) { index in
+                                NewsCard()
+                            }
+                        }
+                        .padding()
+                    }
                     
                 }
                 .padding(.vertical)

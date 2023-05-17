@@ -36,7 +36,6 @@ struct Favorites: View {
                     }
                 }
             }
-            .navigationTitle("My Favorites")
         }
     }
 struct Favorites_Previews: PreviewProvider {
