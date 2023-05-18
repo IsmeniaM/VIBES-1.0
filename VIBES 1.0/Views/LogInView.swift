@@ -107,7 +107,7 @@ struct LogInView: View {
     }
     
     func validateCredentials() -> Bool {
-        // Perform your validation logic here
+        
         return !email.isEmpty && !password.isEmpty
     }
     
@@ -119,7 +119,7 @@ struct LogInView: View {
             return
         }
         
-        // Perform login logic here
+        
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
                 print(error.localizedDescription)

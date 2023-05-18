@@ -98,14 +98,3 @@ struct CustomButtonLogIn: View {
     }
 }
 
-
-
-//struct TopBarView: View {
-//    var body : some View {
-//        Button(action: {}, label: {
-//            Image(systemName: "chevron.backward")
-//                .ignoresSafeArea()
-//                .padding(.horizontal, 20)
-//        })
-//    }
-//}

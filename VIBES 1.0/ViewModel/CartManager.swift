@@ -17,13 +17,13 @@ class CartManager: ObservableObject {
     
     
     func addToCart(concert: Concert) {
-        //Check if the product already exists in the cart
+    
         if let index = concerts.firstIndex(where: {$0.id == concert.id}) {
-            //Increment the quantity of the existing product
+            
             concerts[index].quantity += 1
             total += concert.price
         } else {
-            //Add the new product to the cart
+            
             concerts.append(concert)
             total += concert.price
         }

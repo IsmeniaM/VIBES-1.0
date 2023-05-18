@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Home: View {
     @EnvironmentObject var cartManager: CartManager
-   // @State var news: News
     
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
@@ -48,8 +47,6 @@ struct Home: View {
                         }
                         .padding(.horizontal)
                     }
-                    
-                    // Rest of your code goes here...
                     
                     VStack {
                         Text("NEWS IN TOWN ")

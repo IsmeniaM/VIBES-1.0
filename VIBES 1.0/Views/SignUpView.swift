@@ -22,12 +22,12 @@ struct SignUpView: View {
     func register() {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if  error != nil {
-                // Handle sign-in error
+                
                 print("Sign-in error: \(error!.localizedDescription)")
             } else {
-                // Sign-in successful
+                
                 print("Sign-in successful")
-                // Perform any necessary actions after successful sign-in
+                
             }
         }
     
@@ -52,11 +52,11 @@ struct SignUpView: View {
     
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     if let error = error {
-                        // Handle sign-in error
+                       
                         alertMessage = error.localizedDescription
                         showAlert = true
                     } else {
-                        // Sign-in successful
+                       
                         alertMessage = "Account created successfully."
                         showAlert = true
                         presentationMode.wrappedValue.dismiss()
