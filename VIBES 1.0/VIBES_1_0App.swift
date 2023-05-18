@@ -17,7 +17,7 @@ struct VIBES_1_0App: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+            ContentView()
         }
     }
 }
